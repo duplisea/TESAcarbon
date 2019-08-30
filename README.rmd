@@ -1,0 +1,55 @@
+---
+author: "Daniel E. Duplisea"
+output: md_document
+---
+## Carbon footprint for TESA activities
+
+This calculates and incremental carbon footprint for participants in TESA activities. From this you can calculate the total incremental carbon emissions from an activity (tonnes CO2).
+
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+## Install and load the library
+```{r install, eval=FALSE}
+devtools::install_github("duplisea/TESAcarbon")
+library(TESAcarbon)
+```
+
+```{r loadlibrary, include=FALSE}
+library(TESAcarbon)
+```
+
+## Calculate the incremental carbon footprint
+
+Five nights in a hotel, a 1200 km return plane trip, 40 km of driving to and from airport solo and 15 meals
+
+```{r personal}
+C.f(hotel.nights=5,
+    plane.distance=1200,
+    bustrain.distance= 0,
+    car.distance=40,
+    number.car.sharing=1,
+    meals=15)
+```
+
+Here is an example for a course being held in Ottawa with 27 participants from all regions. Most participants fly but two participants from Burlington decide to drive and share a car. Most participants stay five days but a couple stay only four. It is assumed that everyone except people from Ottawa have 14 meals. The Ottawa people have 1 meal which is the group supper. The course instructor is from Copenhagen and they have one more night's stay and 3 more meals.
+
+```{r group}
+#TESA.course= read.csv("TESA.course.csv")
+TESA.course$C= C.f(hotel.nights=TESA.course$hotel.nights,
+    plane.distance=TESA.course$air.distance*2,
+    bustrain.distance= TESA.course$bustrain.distance*2,
+    car.distance= TESA.course$car.distance*2,
+    number.car.sharing=TESA.course$car.sharing,
+    meals=TESA.course$meals)
+TESA.course[,c(2,10)]
+sum(TESA.course$C)
+```
+
+You will see that the Copenhagen trip is the most carbon heavy while the locals in Ottawa have the lowest footprint. Driving a large car from Burlington with two people is not very different than flying from Halifax or Moncton. The total incremental carbon footprint of TESA activity is 17.2 tonnes of C02.
+
+## References
+
+https://calculator.carbonfootprint.com/
