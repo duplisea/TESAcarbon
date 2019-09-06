@@ -43,6 +43,7 @@
 #' @export
 #' @examples C.f(hotel.nights=5, plane.distance=1200, bustrain.distance= 0, car.distance=40, number.car.sharing=1, meals=15)
 C.f= function(hotel.nights, plane.distance, bustrain.distance, car.distance, number.car.sharing, meals){
+  number.car.sharing[number.car.sharing==0]=1
   c.hotel= carbon.params$C.hotel[1] * hotel.nights + carbon.params$C.hotel[2]
   c.plane= carbon.params$C.plane[1] * plane.distance + carbon.params$C.plane[2]
   c.bustrain= carbon.params$C.bustrain[1] * bustrain.distance + carbon.params$C.bustrain[2]
@@ -50,4 +51,37 @@ C.f= function(hotel.nights, plane.distance, bustrain.distance, car.distance, num
   c.meal= (carbon.params$C.meal[1] * meals + carbon.params$C.meal[2]) * carbon.params$C.meal.discount
   C.total= c.plane + c.car + c.hotel + c.meal
   C.total
+}
+
+#' Lookup flying distances between locations (main DFO science locations)
+#'
+#' @param origin the origin city. It must be an exact match of the distance lookup table. No spaces and no
+#'        punctuation.
+#' @param destination the destination for the activity. For a single activity in say Ottawa use
+#'        destination="Ottawa". If you put it in as a vector with "Ottawa" repeated as many times as the
+#'        origin vector, then just use the first column of the output.
+#' @description This looks up flying distances between origin and destination airports. Flying distances are
+#'        generally taken as direct air distances between cities (https://canada-map.com/distance/). For
+#'        smaller airports, where doubling back usually occurs then this is considered. For example Mont-Joli
+#'        to St. John's requires that you fly southwest to Montreal before flying over Mont-Joli again
+#'        northeast to get to St. John's. There we no effort to account for example that essentially straight
+#'        flights would still have layovers at intermediate airports that could add km to the actual flying
+#'        distance. The multiple possible routings can easily violate assumptions made in that kind of
+#'        consideration.
+#' @author Daniel Duplisea
+#' @export
+#' @examples
+#'        # for the exact names in the distance table
+#'        names(flying.distances)
+#'
+#'        # An example use the TESA.course data and Ottawa as destination
+#'        distance.match.f(TESA.course$Home, "Ottawa")
+#'
+#'        # You will see that the last three values are NA and that is because neither Burlington nor
+#'        # Copenhagen have entries in the distance table
+distance.match.f= function(origin, destination){
+  origin.pos= match(origin,names(flying.distances))
+  destination.pos= match(destination,row.names(flying.distances))
+  fdistance= flying.distances[origin.pos,destination.pos]
+  fdistance
 }

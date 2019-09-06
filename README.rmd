@@ -6,6 +6,10 @@ output: md_document
 
 This calculates and incremental carbon footprint for participants in TESA activities. From this you can calculate the total incremental carbon emissions from an activity (tonnes CO2).
 
+Carbon emissions per km flying, driving, train or bus and emissions for a night in a hotel or average meal in a restaurant are taken from https://calculator.carbonfootprint.com/. Flying distances are generally taken as direct air distances between cities (https://canada-map.com/distance/). For smaller airports, where doubling back usually occurs then this is considered. For example Mont-Joli to St. John's requires that you fly southwest to Montreal before flying over Mont-Joli again northeast to get to St. John's. There we no effort to account for example that essentially straight flights would still have layovers at intermediate airports that could add km to the actual flying distance. The multiple possible routings can easily violate assumptions made in that kind of consideration.
+
+Given assumptions, the most useful aspect of this is to keep calculations consistent and then look at changes from year to year in the carbon emissions.
+
 ```{r setup, include=FALSE, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(error = TRUE)
@@ -39,7 +43,7 @@ Here is an example for a course being held in Ottawa with 27 participants from a
 ```{r group}
 #TESA.course= read.csv("TESA.course.csv")
 TESA.course$C= C.f(hotel.nights=TESA.course$hotel.nights,
-    plane.distance=TESA.course$air.distance*2,
+    plane.distance=TESA.course$plane.distance*2,
     bustrain.distance= TESA.course$bustrain.distance*2,
     car.distance= TESA.course$car.distance*2,
     number.car.sharing=TESA.course$car.sharing,
