@@ -85,3 +85,4 @@ distance.match.f= function(origin, destination){
   fdistance= flying.distances[origin.pos,destination.pos]
   fdistance
 }
+

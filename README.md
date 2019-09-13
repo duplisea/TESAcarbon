@@ -57,42 +57,6 @@ km of driving to and from airport solo and 15 meals
 
     ## [1] 0.530904
 
-Carbon emissions for a hypothetical course in Ottawa
-----------------------------------------------------
-
-Here is an example for a course being held in Ottawa with 27
-participants from all regions. Most participants fly but two
-participants from Burlington decide to drive and share a car. Most
-participants stay five days but a couple stay only four. It is assumed
-that everyone except people from Ottawa have 14 meals. The Ottawa people
-have 1 meal which is the group supper. The course instructor is from
-Copenhagen and they have one more night’s stay and 3 more meals.
-
-    # This is how you would import the csv file but it is already available by default in the library
-    #TESA.course= read.csv("TESA.course.csv")
-    TESA.course$C= C.f(hotel.nights=TESA.course$hotel.nights,
-        plane.distance=TESA.course$plane.distance*2,
-        bustrain.distance= TESA.course$bustrain.distance*2,
-        car.distance= TESA.course$car.distance*2,
-        number.car.sharing=TESA.course$car.sharing,
-        meals=TESA.course$meals)
-
-    ## Error in `$<-.data.frame`(`*tmp*`, C, value = numeric(0)): replacement has 0 rows, data has 27
-
-    TESA.course[,c(2,10)]
-
-    ## Error in `[.data.frame`(TESA.course, , c(2, 10)): undefined columns selected
-
-    sum(TESA.course$C)
-
-    ## [1] 0
-
-You will see that the Copenhagen trip is the most carbon heavy while the
-locals in Ottawa have the lowest footprint. Driving a large car from
-Burlington with two people is not very different than flying from
-Halifax or Moncton. The total incremental carbon footprint of TESA
-activity is 17.2 tonnes of C02.
-
 Projected carbon emissions for TESA 2019/20 activities
 ------------------------------------------------------
 
@@ -108,9 +72,6 @@ where TESA activity participants come from (fill this in further if you
 want and create a pull request).
 
     activities= as.character(unique(TESA19to20$activity.name))
-
-    ## Error in unique(TESA19to20$activity.name): object 'TESA19to20' not found
-
     all.activity.distance=vector()
     for (i in 1:length(activities)){
       activity= activities[i]
@@ -118,13 +79,8 @@ want and create a pull request).
       activity.plane.distance= distance.match.f(specific.activity$origin,specific.activity$destination)[,1]
       all.activity.distance= c(all.activity.distance, activity.plane.distance)
     }
-
-    ## Error in eval(expr, envir, enclos): object 'activities' not found
-
     all.activity.distance[is.na(all.activity.distance)]=0
     TESA19to20$plane.distance= all.activity.distance
-
-    ## Error in TESA19to20$plane.distance = all.activity.distance: object 'TESA19to20' not found
 
 The above does some formatting as well like it changes NA to 0.
 
@@ -134,56 +90,41 @@ The above does some formatting as well like it changes NA to 0.
         car.distance= TESA19to20$car.distance*2,
         number.car.sharing=TESA19to20$car.sharing,
         meals=TESA19to20$meals)
-
-    ## Error in C.f(hotel.nights = TESA19to20$hotel.nights, plane.distance = TESA19to20$plane.distance * : object 'TESA19to20' not found
-
     TESA19to20$C[is.nan(TESA19to20$C)]=0
-
-    ## Error in TESA19to20$C[is.nan(TESA19to20$C)] = 0: object 'TESA19to20' not found
-
     round(sum(TESA19to20$C),3)
 
-    ## Error in eval(expr, envir, enclos): object 'TESA19to20' not found
+    ## [1] 73.194
 
 Now we can summarise the calculation and make a table
 
     total.per.activity= round(tapply(TESA19to20$C,TESA19to20$activity.name,sum),3)
-
-    ## Error in tapply(TESA19to20$C, TESA19to20$activity.name, sum): object 'TESA19to20' not found
-
     participants.per.activity= tapply(TESA19to20$C,TESA19to20$activity.name,length)
-
-    ## Error in tapply(TESA19to20$C, TESA19to20$activity.name, length): object 'TESA19to20' not found
-
     per.capita.per.activity=round(total.per.activity/participants.per.activity,3)
-
-    ## Error in eval(expr, envir, enclos): object 'total.per.activity' not found
-
-    mean.per.capita= round(mean(per.capita.per.acitivty),3)
-
-    ## Error in mean(per.capita.per.acitivty): object 'per.capita.per.acitivty' not found
-
+    mean.per.capita= round(mean(per.capita.per.activity),3)
     total.C= round(sum(TESA19to20$C),3)
+    tab= data.frame(Activity=names(total.per.activity),
+      Total=total.per.activity,
+      Participation=participants.per.activity,
+      C.per.person=per.capita.per.activity)
+    tab
 
-    ## Error in eval(expr, envir, enclos): object 'TESA19to20' not found
+    ##                    Activity  Total Participation C.per.person
+    ## DataLimited     DataLimited 18.194            26        0.700
+    ## Geostatistics Geostatistics 12.697            25        0.508
+    ## Introduction   Introduction 23.496            35        0.671
+    ## Risk                   Risk 18.807            31        0.607
+    ## Rtools               Rtools  0.000            87        0.000
 
-    sort.of.nice.table= t(rbind(total.per.activity,participants.per.activity,per.capita.per.activity))
+    sum(tab$Total)
 
-    ## Error in rbind(total.per.activity, participants.per.activity, per.capita.per.activity): object 'total.per.activity' not found
+    ## [1] 73.194
 
-    sort.of.nice.table=rbind(sort.of.nice.table, c(sum(sort.of.nice.table[,1]),sum(sort.of.nice.table[,2]),mean(sort.of.nice.table[,3])))
+    sum(tab$Participation)
 
-    ## Error in rbind(sort.of.nice.table, c(sum(sort.of.nice.table[, 1]), sum(sort.of.nice.table[, : object 'sort.of.nice.table' not found
+    ## [1] 204
 
-    row.names(sort.of.nice.table)[6]=  "Summary"
-
-    ## Error in row.names(sort.of.nice.table)[6] = "Summary": object 'sort.of.nice.table' not found
-
-    sort.of.nice.table
-
-    ## Error in eval(expr, envir, enclos): object 'sort.of.nice.table' not found
-
-References
-----------
+TESA’s total incremental Carbon footprint for 2019/20 is projected to be
+just over 73 tonnes CO2. 204 people are supposed to participate in TESA
+activities. \#\# References
 
 <a href="https://calculator.carbonfootprint.com/" class="uri">https://calculator.carbonfootprint.com/</a>

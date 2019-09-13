@@ -401,75 +401,52 @@ library(TESAcarbon)</code></pre>
     meals=15)</code></pre>
 <pre><code>## [1] 0.530904</code></pre>
 </div>
-<div id="carbon-emissions-for-a-hypothetical-course-in-ottawa" class="section level2">
-<h2>Carbon emissions for a hypothetical course in Ottawa</h2>
-<p>Here is an example for a course being held in Ottawa with 27 participants from all regions. Most participants fly but two participants from Burlington decide to drive and share a car. Most participants stay five days but a couple stay only four. It is assumed that everyone except people from Ottawa have 14 meals. The Ottawa people have 1 meal which is the group supper. The course instructor is from Copenhagen and they have one more night’s stay and 3 more meals.</p>
-<pre class="r"><code># This is how you would import the csv file but it is already available by default in the library
-#TESA.course= read.csv(&quot;TESA.course.csv&quot;)
-TESA.course$C= C.f(hotel.nights=TESA.course$hotel.nights,
-    plane.distance=TESA.course$plane.distance*2,
-    bustrain.distance= TESA.course$bustrain.distance*2,
-    car.distance= TESA.course$car.distance*2,
-    number.car.sharing=TESA.course$car.sharing,
-    meals=TESA.course$meals)</code></pre>
-<pre><code>## Error in `$&lt;-.data.frame`(`*tmp*`, C, value = numeric(0)): replacement has 0 rows, data has 27</code></pre>
-<pre class="r"><code>TESA.course[,c(2,10)]</code></pre>
-<pre><code>## Error in `[.data.frame`(TESA.course, , c(2, 10)): undefined columns selected</code></pre>
-<pre class="r"><code>sum(TESA.course$C)</code></pre>
-<pre><code>## [1] 0</code></pre>
-<p>You will see that the Copenhagen trip is the most carbon heavy while the locals in Ottawa have the lowest footprint. Driving a large car from Burlington with two people is not very different than flying from Halifax or Moncton. The total incremental carbon footprint of TESA activity is 17.2 tonnes of C02.</p>
-</div>
 <div id="projected-carbon-emissions-for-tesa-201920-activities" class="section level2">
 <h2>Projected carbon emissions for TESA 2019/20 activities</h2>
 <p>In order to distribute money to regions each year, TESA requires a fairly solid participant list from each region where travel costs per participant can be determined and funds allocated accordingly. This list was used to develop a projected carbon emissions scenario for 2019.</p>
 <p>First you need to determine the flying distances from the distances lookup square matrix. This is sparse at the moment with only locations that have DFO research labs associated with them included as that is where TESA activity participants come from (fill this in further if you want and create a pull request).</p>
-<pre class="r"><code>activities= as.character(unique(TESA19to20$activity.name))</code></pre>
-<pre><code>## Error in unique(TESA19to20$activity.name): object &#39;TESA19to20&#39; not found</code></pre>
-<pre class="r"><code>all.activity.distance=vector()
+<pre class="r"><code>activities= as.character(unique(TESA19to20$activity.name))
+all.activity.distance=vector()
 for (i in 1:length(activities)){
   activity= activities[i]
   specific.activity= TESA19to20[TESA19to20$activity.name==activity,]
   activity.plane.distance= distance.match.f(specific.activity$origin,specific.activity$destination)[,1]
   all.activity.distance= c(all.activity.distance, activity.plane.distance)
-}</code></pre>
-<pre><code>## Error in eval(expr, envir, enclos): object &#39;activities&#39; not found</code></pre>
-<pre class="r"><code>all.activity.distance[is.na(all.activity.distance)]=0
+}
+all.activity.distance[is.na(all.activity.distance)]=0
 TESA19to20$plane.distance= all.activity.distance</code></pre>
-<pre><code>## Error in TESA19to20$plane.distance = all.activity.distance: object &#39;TESA19to20&#39; not found</code></pre>
 <p>The above does some formatting as well like it changes NA to 0.</p>
 <pre class="r"><code>TESA19to20$C= C.f(hotel.nights=TESA19to20$hotel.nights,
     plane.distance=TESA19to20$plane.distance*2,
     bustrain.distance= TESA19to20$bustrain.distance*2,
     car.distance= TESA19to20$car.distance*2,
     number.car.sharing=TESA19to20$car.sharing,
-    meals=TESA19to20$meals)</code></pre>
-<pre><code>## Error in C.f(hotel.nights = TESA19to20$hotel.nights, plane.distance = TESA19to20$plane.distance * : object &#39;TESA19to20&#39; not found</code></pre>
-<pre class="r"><code>TESA19to20$C[is.nan(TESA19to20$C)]=0</code></pre>
-<pre><code>## Error in TESA19to20$C[is.nan(TESA19to20$C)] = 0: object &#39;TESA19to20&#39; not found</code></pre>
-<pre class="r"><code>round(sum(TESA19to20$C),3)</code></pre>
-<pre><code>## Error in eval(expr, envir, enclos): object &#39;TESA19to20&#39; not found</code></pre>
+    meals=TESA19to20$meals)
+TESA19to20$C[is.nan(TESA19to20$C)]=0
+round(sum(TESA19to20$C),3)</code></pre>
+<pre><code>## [1] 73.194</code></pre>
 <p>Now we can summarise the calculation and make a table</p>
-<pre class="r"><code>total.per.activity= round(tapply(TESA19to20$C,TESA19to20$activity.name,sum),3)</code></pre>
-<pre><code>## Error in tapply(TESA19to20$C, TESA19to20$activity.name, sum): object &#39;TESA19to20&#39; not found</code></pre>
-<pre class="r"><code>participants.per.activity= tapply(TESA19to20$C,TESA19to20$activity.name,length)</code></pre>
-<pre><code>## Error in tapply(TESA19to20$C, TESA19to20$activity.name, length): object &#39;TESA19to20&#39; not found</code></pre>
-<pre class="r"><code>per.capita.per.activity=round(total.per.activity/participants.per.activity,3)</code></pre>
-<pre><code>## Error in eval(expr, envir, enclos): object &#39;total.per.activity&#39; not found</code></pre>
-<pre class="r"><code>mean.per.capita= round(mean(per.capita.per.acitivty),3)</code></pre>
-<pre><code>## Error in mean(per.capita.per.acitivty): object &#39;per.capita.per.acitivty&#39; not found</code></pre>
-<pre class="r"><code>total.C= round(sum(TESA19to20$C),3)</code></pre>
-<pre><code>## Error in eval(expr, envir, enclos): object &#39;TESA19to20&#39; not found</code></pre>
-<pre class="r"><code>sort.of.nice.table= t(rbind(total.per.activity,participants.per.activity,per.capita.per.activity))</code></pre>
-<pre><code>## Error in rbind(total.per.activity, participants.per.activity, per.capita.per.activity): object &#39;total.per.activity&#39; not found</code></pre>
-<pre class="r"><code>sort.of.nice.table=rbind(sort.of.nice.table, c(sum(sort.of.nice.table[,1]),sum(sort.of.nice.table[,2]),mean(sort.of.nice.table[,3])))</code></pre>
-<pre><code>## Error in rbind(sort.of.nice.table, c(sum(sort.of.nice.table[, 1]), sum(sort.of.nice.table[, : object &#39;sort.of.nice.table&#39; not found</code></pre>
-<pre class="r"><code>row.names(sort.of.nice.table)[6]=  &quot;Summary&quot;</code></pre>
-<pre><code>## Error in row.names(sort.of.nice.table)[6] = &quot;Summary&quot;: object &#39;sort.of.nice.table&#39; not found</code></pre>
-<pre class="r"><code>sort.of.nice.table</code></pre>
-<pre><code>## Error in eval(expr, envir, enclos): object &#39;sort.of.nice.table&#39; not found</code></pre>
-</div>
-<div id="references" class="section level2">
-<h2>References</h2>
+<pre class="r"><code>total.per.activity= round(tapply(TESA19to20$C,TESA19to20$activity.name,sum),3)
+participants.per.activity= tapply(TESA19to20$C,TESA19to20$activity.name,length)
+per.capita.per.activity=round(total.per.activity/participants.per.activity,3)
+mean.per.capita= round(mean(per.capita.per.activity),3)
+total.C= round(sum(TESA19to20$C),3)
+tab= data.frame(Activity=names(total.per.activity),
+  Total=total.per.activity,
+  Participation=participants.per.activity,
+  C.per.person=per.capita.per.activity)
+tab</code></pre>
+<pre><code>##                    Activity  Total Participation C.per.person
+## DataLimited     DataLimited 18.194            26        0.700
+## Geostatistics Geostatistics 12.697            25        0.508
+## Introduction   Introduction 23.496            35        0.671
+## Risk                   Risk 18.807            31        0.607
+## Rtools               Rtools  0.000            87        0.000</code></pre>
+<pre class="r"><code>sum(tab$Total)</code></pre>
+<pre><code>## [1] 73.194</code></pre>
+<pre class="r"><code>sum(tab$Participation)</code></pre>
+<pre><code>## [1] 204</code></pre>
+<p>TESA’s total incremental Carbon footprint for 2019/20 is projected to be just over 73 tonnes CO2. 204 people are supposed to participate in TESA activities. ## References</p>
 <p><a href="https://calculator.carbonfootprint.com/" class="uri">https://calculator.carbonfootprint.com/</a></p>
 </div>
 
