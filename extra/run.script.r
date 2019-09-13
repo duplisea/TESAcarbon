@@ -19,9 +19,6 @@ for (i in 1:length(activities)){
   all.activity.distance= c(all.activity.distance, activity.plane.distance)
 }
 all.activity.distance[is.na(all.activity.distance)]=0
-TESA.1920$plane.distance= all.activity.distance*2
-TESA.1920$car.distance= TESA.1920$car.distance*2
-TESA.1920$bustrain.distance= TESA.1920$bustrain.distance*2
 TESA.1920$C= C.f(hotel.nights=TESA.1920$hotel.nights,
     plane.distance=TESA.1920$plane.distance*2,
     bustrain.distance= TESA.1920$bustrain.distance*2,

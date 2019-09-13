@@ -25,10 +25,10 @@ This is a rough CO2 calculator. The output is in tonnes CO2 for the trip. It is 
         information from the carboon footprint calculator. It makes several assumptions: an average meal out
         costs 20 USD. The average hotel cost is 160 USD/night, bustrain carbon cost is an average of several
         modes of wheeled public transport, car travel is based on a standard gasoline car with engine > 2l.
-        Meal carbon costs are discounted by 50% because you are not eating at home but because restaurants
-        are about half as efficient as home for carbon use mostly owing to food waste (cbc article). Results
-        compare pretty well with https://calculator.carbonfootprint.com but they tend to be slightly lower
-        primarily because restaurant meal carbon costs are discounted by 50%.
+        Meal carbon costs are discounted by 50 percent because restaurants are about half as efficient as home
+        for carbon use mostly owing to food waste (cbc article). Results compare pretty well with
+        https://calculator.carbonfootprint.com but they tend to be slightly lower primarily because restaurant
+        meal carbon costs are discounted by 50 percent.
 
         The carbon footprint is incremental in that it assumes most of the carbon consuming activities that a
         participant does at home (except meals) continue at home while they are away. e.g. they still heat their
