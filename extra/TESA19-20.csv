@@ -1,205 +1,211 @@
-fiscal.year,date,activity.type,activity.name,participant.region,origin,destination,hotel.nights,meals,bustrain.distance,car.distance,car.sharing
-'19/20,2019,course,Rtools,PAC,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,C&A,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,QUE,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,QUE,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,QUE,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,QUE,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,QUE,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,QUE,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,QUE,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,QUE,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,QUE,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,QUE,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,GULF,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,MAR,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NL,online,online,0,0,0,0,0
-'19/20,2019,course,Rtools,NCR,online,online,0,0,0,0,0
-'19/20,Nov2019,course,Geostatistics,PAC,Nanaimo,Winnipeg,5,16,0,0,0
-'19/20,Nov2019,course,Geostatistics,PAC,Nanaimo,Winnipeg,5,16,0,0,0
-'19/20,Nov2019,course,Geostatistics,PAC,Nanaimo,Winnipeg,5,16,0,0,0
-'19/20,Nov2019,course,Geostatistics,PAC,Nanaimo,Winnipeg,5,16,0,0,0
-'19/20,Nov2019,course,Geostatistics,PAC,Nanaimo,Winnipeg,5,16,0,0,0
-'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,0,0,0,0,0
-'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,0,0,0,0,0
-'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,0,0,0,0,0
-'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,0,0,0,0,0
-'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,0,0,0,0,0
-'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,0,0,0,0,0
-'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,0,0,0,0,0
-'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,0,0,0,0,0
-'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,0,0,0,0,0
-'19/20,Nov2019,course,Geostatistics,QUE,MontJoli,Winnipeg,6,18,0,0,0
-'19/20,Nov2019,course,Geostatistics,QUE,MontJoli,Winnipeg,6,18,0,0,0
-'19/20,Nov2019,course,Geostatistics,QUE,MontJoli,Winnipeg,6,18,0,0,0
-'19/20,Nov2019,course,Geostatistics,GULF,Moncton,Winnipeg,6,18,0,0,0
-'19/20,Nov2019,course,Geostatistics,GULF,Moncton,Winnipeg,6,18,0,0,0
-'19/20,Nov2019,course,Geostatistics,GULF,Moncton,Winnipeg,6,18,0,0,0
-'19/20,Nov2019,course,Geostatistics,MAR,Halifax,Winnipeg,5,16,0,0,0
-'19/20,Nov2019,course,Geostatistics,MAR,Halifax,Winnipeg,5,16,0,0,0
-'19/20,Nov2019,course,Geostatistics,MAR,Halifax,Winnipeg,5,16,0,0,0
-'19/20,Nov2019,course,Geostatistics,NL,StJohns,Winnipeg,6,18,0,0,0
-'19/20,Nov2019,course,Geostatistics,NL,StJohns,Winnipeg,6,18,0,0,0
-'19/20,Nov2019,course,Introduction,PAC,Nanaimo,StAndrews,6,18,0,150,5
-'19/20,Nov2019,course,Introduction,PAC,Nanaimo,StAndrews,6,18,0,150,5
-'19/20,Nov2019,course,Introduction,PAC,Nanaimo,StAndrews,6,18,0,150,5
-'19/20,Nov2019,course,Introduction,PAC,Nanaimo,StAndrews,6,18,0,150,5
-'19/20,Nov2019,course,Introduction,PAC,Nanaimo,StAndrews,6,18,0,150,5
-'19/20,Nov2019,course,Introduction,C&A,Winnipeg,StAndrews,6,18,0,150,5
-'19/20,Nov2019,course,Introduction,C&A,Winnipeg,StAndrews,6,18,0,150,5
-'19/20,Nov2019,course,Introduction,C&A,Winnipeg,StAndrews,6,18,0,150,5
-'19/20,Nov2019,course,Introduction,C&A,Winnipeg,StAndrews,6,18,0,150,5
-'19/20,Nov2019,course,Introduction,QUE,MontJoli,StAndrews,6,18,0,600,5
-'19/20,Nov2019,course,Introduction,QUE,MontJoli,StAndrews,6,18,0,600,5
-'19/20,Nov2019,course,Introduction,QUE,MontJoli,StAndrews,6,18,0,600,5
-'19/20,Nov2019,course,Introduction,QUE,MontJoli,StAndrews,6,18,0,600,5
-'19/20,Nov2019,course,Introduction,QUE,MontJoli,StAndrews,6,18,0,600,5
-'19/20,Nov2019,course,Introduction,GULF,Moncton,StAndrews,5,16,0,250,3
-'19/20,Nov2019,course,Introduction,GULF,Moncton,StAndrews,5,16,0,250,3
-'19/20,Nov2019,course,Introduction,GULF,Moncton,StAndrews,5,16,0,250,3
-'19/20,Nov2019,course,Introduction,MAR,Halifax,StAndrews,5,16,0,700,4
-'19/20,Nov2019,course,Introduction,MAR,Halifax,StAndrews,5,16,0,700,4
-'19/20,Nov2019,course,Introduction,MAR,Halifax,StAndrews,5,16,0,700,4
-'19/20,Nov2019,course,Introduction,MAR,StAndrews,StAndrews,0,0,0,0,0
-'19/20,Nov2019,course,Introduction,MAR,Halifax,StAndrews,5,16,0,700,4
-'19/20,Nov2019,course,Introduction,MAR,Halifax,StAndrews,5,16,0,700,4
-'19/20,Nov2019,course,Introduction,MAR,Halifax,StAndrews,5,16,0,700,4
-'19/20,Nov2019,course,Introduction,MAR,Halifax,StAndrews,5,16,0,700,4
-'19/20,Nov2019,course,Introduction,MAR,Halifax,StAndrews,5,16,0,700,4
-'19/20,Nov2019,course,Introduction,MAR,Halifax,StAndrews,5,16,0,700,4
-'19/20,Nov2019,course,Introduction,MAR,StAndrews,StAndrews,0,0,0,0,0
-'19/20,Nov2019,course,Introduction,MAR,Halifax,StAndrews,5,16,0,700,4
-'19/20,Nov2019,course,Introduction,MAR,Halifax,StAndrews,5,16,0,700,4
-'19/20,Nov2019,course,Introduction,NL,StJohns,StAndrews,6,18,0,150,5
-'19/20,Nov2019,course,Introduction,NL,StJohns,StAndrews,6,18,0,150,5
-'19/20,Nov2019,course,Introduction,NL,StJohns,StAndrews,6,18,0,150,5
-'19/20,Nov2019,course,Introduction,NL,StJohns,StAndrews,6,18,0,150,5
-'19/20,Nov2019,course,Introduction,NL,StJohns,StAndrews,6,18,0,150,5
-'19/20,Jan2020,course,DataLimited,PAC,Nanaimo,Nanaimo,0,0,0,0,0
-'19/20,Jan2020,course,DataLimited,PAC,Nanaimo,Nanaimo,0,0,0,0,0
-'19/20,Jan2020,course,DataLimited,PAC,Nanaimo,Nanaimo,0,0,0,0,0
-'19/20,Jan2020,course,DataLimited,PAC,Nanaimo,Nanaimo,0,0,0,0,0
-'19/20,Jan2020,course,DataLimited,PAC,Nanaimo,Nanaimo,0,0,0,0,0
-'19/20,Jan2020,course,DataLimited,PAC,Vancouver,Nanaimo,5,16,0,100,4
-'19/20,Jan2020,course,DataLimited,PAC,Vancouver,Nanaimo,5,16,0,100,4
-'19/20,Jan2020,course,DataLimited,PAC,Vancouver,Nanaimo,5,16,0,100,4
-'19/20,Jan2020,course,DataLimited,PAC,Vancouver,Nanaimo,5,16,0,100,4
-'19/20,Jan2020,course,DataLimited,C&A,Winnipeg,Nanaimo,5,16,0,0,0
-'19/20,Jan2020,course,DataLimited,C&A,Winnipeg,Nanaimo,5,16,0,0,0
-'19/20,Jan2020,course,DataLimited,C&A,Winnipeg,Nanaimo,5,16,0,0,0
-'19/20,Jan2020,course,DataLimited,C&A,Winnipeg,Nanaimo,5,16,0,0,0
-'19/20,Jan2020,course,DataLimited,C&A,Winnipeg,Nanaimo,5,16,0,0,0
-'19/20,Jan2020,course,DataLimited,QUE,MontJoli,Nanaimo,6,18,0,0,0
-'19/20,Jan2020,course,DataLimited,QUE,MontJoli,Nanaimo,6,18,0,0,0
-'19/20,Jan2020,course,DataLimited,QUE,MontJoli,Nanaimo,6,18,0,0,0
-'19/20,Jan2020,course,DataLimited,GULF,Moncton,Nanaimo,6,18,0,0,0
-'19/20,Jan2020,course,DataLimited,GULF,Moncton,Nanaimo,6,18,0,0,0
-'19/20,Jan2020,course,DataLimited,GULF,Moncton,Nanaimo,6,18,0,0,0
-'19/20,Jan2020,course,DataLimited,MAR,Halifax,Nanaimo,5,16,0,0,0
-'19/20,Jan2020,course,DataLimited,MAR,Halifax,Nanaimo,5,16,0,0,0
-'19/20,Jan2020,course,DataLimited,MAR,Halifax,Nanaimo,5,16,0,0,0
-'19/20,Jan2020,course,DataLimited,NL,StJohns,Nanaimo,6,18,0,0,0
-'19/20,Jan2020,course,DataLimited,NL,StJohns,Nanaimo,6,18,0,0,0
-'19/20,Jan2020,course,DataLimited,NCR,Ottawa,Nanaimo,5,16,0,0,0
-'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,5,16,0,0,0
-'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,5,16,0,0,0
-'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,5,16,0,0,0
-'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,5,16,0,0,0
-'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,5,16,0,0,0
-'19/20,Jan2020,workshop,Risk,C&A,Winnipeg,Ottawa,5,16,0,0,0
-'19/20,Jan2020,workshop,Risk,C&A,Winnipeg,Ottawa,5,16,0,0,0
-'19/20,Jan2020,workshop,Risk,C&A,Winnipeg,Ottawa,5,16,0,0,0
-'19/20,Jan2020,workshop,Risk,C&A,Winnipeg,Ottawa,5,16,0,0,0
-'19/20,Jan2020,workshop,Risk,QUE,MontJoli,Ottawa,6,18,0,800,5
-'19/20,Jan2020,workshop,Risk,QUE,MontJoli,Ottawa,6,18,0,800,5
-'19/20,Jan2020,workshop,Risk,QUE,MontJoli,Ottawa,6,18,0,800,5
-'19/20,Jan2020,workshop,Risk,QUE,MontJoli,Ottawa,6,18,0,800,5
-'19/20,Jan2020,workshop,Risk,QUE,MontJoli,Ottawa,6,18,0,800,5
-'19/20,Jan2020,workshop,Risk,GULF,Moncton,Ottawa,6,18,0,0,0
-'19/20,Jan2020,workshop,Risk,GULF,Moncton,Ottawa,6,18,0,0,0
-'19/20,Jan2020,workshop,Risk,GULF,Moncton,Ottawa,6,18,0,0,0
-'19/20,Jan2020,workshop,Risk,MAR,Halifax,Ottawa,6,18,0,0,0
-'19/20,Jan2020,workshop,Risk,MAR,Halifax,Ottawa,6,18,0,0,0
-'19/20,Jan2020,workshop,Risk,MAR,Halifax,Ottawa,6,18,0,0,0
-'19/20,Jan2020,workshop,Risk,MAR,Halifax,Ottawa,6,18,0,0,0
-'19/20,Jan2020,workshop,Risk,NL,StJohns,Ottawa,6,18,0,0,0
-'19/20,Jan2020,workshop,Risk,NL,StJohns,Ottawa,6,18,0,0,0
-'19/20,Jan2020,workshop,Risk,NL,StJohns,Ottawa,6,18,0,0,0
-'19/20,Jan2020,workshop,Risk,NL,StJohns,Ottawa,6,18,0,0,0
-'19/20,Jan2020,workshop,Risk,NL,StJohns,Ottawa,6,18,0,0,0
-'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,0,0,0,0,0
-'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,0,0,0,0,0
-'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,0,0,0,0,0
-'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,0,0,0,0,0
-'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,0,0,0,0,0
+fiscal.year,date,activity.type,activity.name,participant.region,origin,destination,origin.country,hotel.nights,meals,bustrain.distance,car.distance,car.sharing
+'19/20,2019,online course,Rtools,PAC,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,C&A,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,QUE,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,QUE,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,QUE,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,QUE,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,QUE,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,QUE,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,QUE,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,QUE,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,QUE,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,QUE,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,GULF,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,MAR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NL,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,2019,online course,Rtools,NCR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Geostatistics,NA,Montreal,Winnipeg,Canada,5,16,0,0,0
+'19/20,Nov2019,course,Geostatistics,PAC,Nanaimo,Winnipeg,Canada,5,16,0,0,0
+'19/20,Nov2019,course,Geostatistics,PAC,Nanaimo,Winnipeg,Canada,5,16,0,0,0
+'19/20,Nov2019,course,Geostatistics,PAC,Nanaimo,Winnipeg,Canada,5,16,0,0,0
+'19/20,Nov2019,course,Geostatistics,PAC,Nanaimo,Winnipeg,Canada,5,16,0,0,0
+'19/20,Nov2019,course,Geostatistics,PAC,Nanaimo,Winnipeg,Canada,5,16,0,0,0
+'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Geostatistics,C&A,Winnipeg,Winnipeg,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Geostatistics,QUE,Mont-Joli,Winnipeg,Canada,6,18,0,0,0
+'19/20,Nov2019,course,Geostatistics,QUE,Mont-Joli,Winnipeg,Canada,6,18,0,0,0
+'19/20,Nov2019,course,Geostatistics,QUE,Mont-Joli,Winnipeg,Canada,6,18,0,0,0
+'19/20,Nov2019,course,Geostatistics,GULF,Moncton,Winnipeg,Canada,6,18,0,0,0
+'19/20,Nov2019,course,Geostatistics,GULF,Moncton,Winnipeg,Canada,6,18,0,0,0
+'19/20,Nov2019,course,Geostatistics,GULF,Moncton,Winnipeg,Canada,6,18,0,0,0
+'19/20,Nov2019,course,Geostatistics,MAR,Halifax,Winnipeg,Canada,5,16,0,0,0
+'19/20,Nov2019,course,Geostatistics,MAR,Halifax,Winnipeg,Canada,5,16,0,0,0
+'19/20,Nov2019,course,Geostatistics,MAR,Halifax,Winnipeg,Canada,5,16,0,0,0
+'19/20,Nov2019,course,Geostatistics,NL,Saint John's,Winnipeg,Canada,6,18,0,0,0
+'19/20,Nov2019,course,Geostatistics,NL,Saint John's,Winnipeg,Canada,6,18,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,PAC,Nanaimo,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,PAC,Nanaimo,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,PAC,Nanaimo,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,PAC,Nanaimo,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,PAC,Nanaimo,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,C&A,Winnipeg,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,C&A,Winnipeg,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,C&A,Winnipeg,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,C&A,Winnipeg,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,QUE,Mont-Joli,Saint Andrews,Canada,6,18,0,600,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,QUE,Mont-Joli,Saint Andrews,Canada,6,18,0,600,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,QUE,Mont-Joli,Saint Andrews,Canada,6,18,0,600,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,QUE,Mont-Joli,Saint Andrews,Canada,6,18,0,600,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,QUE,Mont-Joli,Saint Andrews,Canada,6,18,0,600,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,GULF,Moncton,Saint Andrews,Canada,5,16,0,250,3
+'19/20,Nov2019,course,Introduction to Stock Assessment,GULF,Moncton,Saint Andrews,Canada,5,16,0,250,3
+'19/20,Nov2019,course,Introduction to Stock Assessment,GULF,Moncton,Saint Andrews,Canada,5,16,0,250,3
+'19/20,Nov2019,course,Introduction to Stock Assessment,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Introduction to Stock Assessment,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Introduction to Stock Assessment,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Introduction to Stock Assessment,MAR,Saint Andrews,Saint Andrews,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Introduction to Stock Assessment,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Introduction to Stock Assessment,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Introduction to Stock Assessment,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Introduction to Stock Assessment,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Introduction to Stock Assessment,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Introduction to Stock Assessment,MAR,Saint Andrews,Saint Andrews,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Introduction to Stock Assessment,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Introduction to Stock Assessment,NL,Saint John's,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,NL,Saint John's,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,NL,Saint John's,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,NL,Saint John's,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,NL,Saint John's,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Introduction to Stock Assessment,FL,Gainesville,Saint Andrews,USA,6,18,0,150,5
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Nanaimo,Nanaimo,Canada,0,0,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Nanaimo,Nanaimo,Canada,0,0,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Nanaimo,Nanaimo,Canada,0,0,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Nanaimo,Nanaimo,Canada,0,0,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Nanaimo,Nanaimo,Canada,0,0,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Vancouver,Nanaimo,Canada,5,16,0,100,4
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Vancouver,Nanaimo,Canada,5,16,0,100,4
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Vancouver,Nanaimo,Canada,5,16,0,100,4
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Vancouver,Nanaimo,Canada,5,16,0,100,4
+'19/20,Jan2020,course,Data-limited Stock Assessment,C&A,Winnipeg,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,C&A,Winnipeg,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,C&A,Winnipeg,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,C&A,Winnipeg,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,C&A,Winnipeg,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,QUE,Mont-Joli,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,QUE,Mont-Joli,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,QUE,Mont-Joli,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,GULF,Moncton,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,GULF,Moncton,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,GULF,Moncton,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,MAR,Halifax,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,MAR,Halifax,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,MAR,Halifax,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,NL,Saint John's,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,NL,Saint John's,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,NA,Seattle,Nanaimo,USA,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,NA,Seattle,Nanaimo,USA,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,NCR,Ottawa,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,C&A,Winnipeg,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,C&A,Winnipeg,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,C&A,Winnipeg,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,C&A,Winnipeg,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,QUE,Mont-Joli,Ottawa,Canada,6,18,0,800,5
+'19/20,Jan2020,workshop,Risk,QUE,Mont-Joli,Ottawa,Canada,6,18,0,800,5
+'19/20,Jan2020,workshop,Risk,QUE,Mont-Joli,Ottawa,Canada,6,18,0,800,5
+'19/20,Jan2020,workshop,Risk,QUE,Mont-Joli,Ottawa,Canada,6,18,0,800,5
+'19/20,Jan2020,workshop,Risk,QUE,Mont-Joli,Ottawa,Canada,6,18,0,800,5
+'19/20,Jan2020,workshop,Risk,GULF,Moncton,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,GULF,Moncton,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,GULF,Moncton,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,MAR,Halifax,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,MAR,Halifax,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,MAR,Halifax,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,MAR,Halifax,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,NL,Saint John's,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,NL,Saint John's,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,NL,Saint John's,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,NL,Saint John's,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,NL,Saint John's,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,Jan2020,workshop,Risk,NA,Wellington,Ottawa,New Zealand,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,BC,Vancouver,Ottawa,Canada,6,18,0,0,0

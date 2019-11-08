@@ -1,0 +1,124 @@
+fiscal.year,date,activity.type,activity.name,participant.region,origin,destination,origin.country,hotel.nights,meals,bustrain.distance,car.distance,car.sharing
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Bergen,Copenhagen,Norway,5,16,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Goteborg,Copenhagen,Sweden,5,16,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Copenhagen,Copenhagen,Denmark,5,16,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Aberdeen,Copenhagen,UK,5,16,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Lowestoft,Copenhagen,UK,5,16,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Galway,Copenhagen,Ireland,5,16,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Amsterdam,Copenhagen,Netherlands,0,0,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Brest,Copenhagen,France,0,0,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Helsinki,Copenhagen,Finland,0,0,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Murmansk,Copenhagen,Russia,0,0,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Vladivostok,Copenhagen,Russia,0,0,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Tallinn,Copenhagen,Estonia,0,0,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Nantes,Copenhagen,France,0,0,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Gdynia,Copenhagen,Poland,0,0,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Santander,Copenhagen,Spain,0,0,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Vigo,Copenhagen,Spain,6,18,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Porto,Copenhagen,Portugal,6,18,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Mont-Joli,Copenhagen,Canada,6,18,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Copenhagen,Copenhagen,Denmark,6,18,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Hamburg,Copenhagen,Germany,6,18,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Kiel,Copenhagen,Germany,6,18,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Riga,Copenhagen,Latvia,5,16,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Falmouth,Copenhagen,USA,5,16,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Miami,Copenhagen,USA,5,16,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Concepcion,Copenhagen,Chile,6,18,0,0,0
+'19/20,Nov2019,course,Introduction to Stock Assessment,NA,Saint John's,Copenhagen,Canada,6,18,0,0,0
+'19/20,Nov2019,course,Hydroacoustics,PAC,Nanaimo,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,PAC,Nanaimo,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,PAC,Nanaimo,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,PAC,Nanaimo,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,PAC,Nanaimo,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,C&A,Winnipeg,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,C&A,Winnipeg,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,C&A,Winnipeg,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,C&A,Winnipeg,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,QUE,Mont-Joli,Saint Andrews,Canada,6,18,0,600,5
+'19/20,Nov2019,course,Hydroacoustics,QUE,Mont-Joli,Saint Andrews,Canada,6,18,0,600,5
+'19/20,Nov2019,course,Hydroacoustics,QUE,Mont-Joli,Saint Andrews,Canada,6,18,0,600,5
+'19/20,Nov2019,course,Hydroacoustics,QUE,Mont-Joli,Saint Andrews,Canada,6,18,0,600,5
+'19/20,Nov2019,course,Hydroacoustics,QUE,Mont-Joli,Saint Andrews,Canada,6,18,0,600,5
+'19/20,Nov2019,course,Hydroacoustics,GULF,Moncton,Saint Andrews,Canada,5,16,0,250,3
+'19/20,Nov2019,course,Hydroacoustics,GULF,Moncton,Saint Andrews,Canada,5,16,0,250,3
+'19/20,Nov2019,course,Hydroacoustics,GULF,Moncton,Saint Andrews,Canada,5,16,0,250,3
+'19/20,Nov2019,course,Hydroacoustics,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Hydroacoustics,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Hydroacoustics,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Hydroacoustics,MAR,Saint Andrews,Saint Andrews,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Hydroacoustics,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Hydroacoustics,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Hydroacoustics,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Hydroacoustics,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Hydroacoustics,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Hydroacoustics,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Hydroacoustics,MAR,Saint Andrews,Saint Andrews,Canada,0,0,0,0,0
+'19/20,Nov2019,course,Hydroacoustics,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Hydroacoustics,MAR,Halifax,Saint Andrews,Canada,5,16,0,700,4
+'19/20,Nov2019,course,Hydroacoustics,NL,Saint John's,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,NL,Saint John's,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,NL,Saint John's,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,NL,Saint John's,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,NL,Saint John's,Saint Andrews,Canada,6,18,0,150,5
+'19/20,Nov2019,course,Hydroacoustics,FL,Gainesville,Saint Andrews,USA,6,18,0,150,5
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Nanaimo,Nanaimo,Canada,0,0,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Nanaimo,Nanaimo,Canada,0,0,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Nanaimo,Nanaimo,Canada,0,0,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Nanaimo,Nanaimo,Canada,0,0,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Nanaimo,Nanaimo,Canada,0,0,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Vancouver,Nanaimo,Canada,5,16,0,100,4
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Vancouver,Nanaimo,Canada,5,16,0,100,4
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Vancouver,Nanaimo,Canada,5,16,0,100,4
+'19/20,Jan2020,course,Data-limited Stock Assessment,PAC,Vancouver,Nanaimo,Canada,5,16,0,100,4
+'19/20,Jan2020,course,Data-limited Stock Assessment,C&A,Winnipeg,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,C&A,Winnipeg,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,C&A,Winnipeg,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,C&A,Winnipeg,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,C&A,Winnipeg,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,QUE,Mont-Joli,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,QUE,Mont-Joli,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,QUE,Mont-Joli,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,GULF,Moncton,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,GULF,Moncton,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,GULF,Moncton,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,MAR,Halifax,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,MAR,Halifax,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,MAR,Halifax,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,NL,Saint John's,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,NL,Saint John's,Nanaimo,Canada,6,18,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,NA,Seattle,Nanaimo,USA,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,NA,Seattle,Nanaimo,USA,5,16,0,0,0
+'19/20,Jan2020,course,Data-limited Stock Assessment,NCR,Ottawa,Nanaimo,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,PAC,Nanaimo,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,C&A,Winnipeg,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,C&A,Winnipeg,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,C&A,Winnipeg,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,C&A,Winnipeg,Ottawa,Canada,5,16,0,0,0
+'19/20,Jan2020,workshop,Risk,QUE,Mont-Joli,Ottawa,Canada,6,18,0,800,5
+'19/20,Jan2020,workshop,Risk,QUE,Mont-Joli,Ottawa,Canada,6,18,0,800,5
+'19/20,Jan2020,workshop,Risk,QUE,Mont-Joli,Ottawa,Canada,6,18,0,800,5
+'19/20,Jan2020,workshop,Risk,QUE,Mont-Joli,Ottawa,Canada,6,18,0,800,5
+'19/20,Jan2020,workshop,Risk,QUE,Mont-Joli,Ottawa,Canada,6,18,0,800,5
+'19/20,Jan2020,workshop,Risk,GULF,Moncton,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,GULF,Moncton,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,GULF,Moncton,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,MAR,Halifax,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,MAR,Halifax,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,MAR,Halifax,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,MAR,Halifax,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,NL,Saint John's,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,NL,Saint John's,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,NL,Saint John's,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,NL,Saint John's,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,NL,Saint John's,Ottawa,Canada,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,Jan2020,workshop,Risk,NCR,Ottawa,Ottawa,Canada,0,0,0,0,0
+'19/20,Jan2020,workshop,Risk,NA,Wellington,Ottawa,New Zealand,6,18,0,0,0
+'19/20,Jan2020,workshop,Risk,BC,Vancouver,Ottawa,Canada,6,18,0,0,0

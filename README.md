@@ -1,40 +1,26 @@
-Carbon footprint for TESA activities
-------------------------------------
+Carbon footprint for meetings and courses
+-----------------------------------------
 
-The group Technical Expertise in Stock Assessment (TESA) organises
-courses and workshops each year for DFO employees to continuarlly build
-the expertise in the Department of Fisheries and Oceans to get to,
-remain at and hopefully push the boundaries of stock assessment
-expertise. The activities organised by TESA entail a carbon footprint in
-the form of travel to training courses and workshops. TESA also,
-however, offers online training possibilities each year which have
-little or neglible incremental carbon emissions associated with them.
+Meetings, courses, workshops etc, means that participant travel,
+restaurant meals and stays in hotels cause carbon emissions over and
+above the carbon emissions of a participant not travelling. This carbon
+footprint calculator provides a rough but consistent means of
+determining carbon emmision incurred by a meeting and specifically in
+this case for TESA activities. The group Technical Expertise in Stock
+Assessment (TESA) organises courses and workshops each year for DFO
+employees to continually build the expertise in the Department of
+Fisheries and Oceans in stock assessment. It is essential that
+face-to-face meetings occur for many but not all of these activities.
 
 In an effort to quantify TESA carbon emissions, to track them by year,
 activity and location, this carbon footprint calculator has been
 developed. It accounts only for travel related carbon emissions
-(transport, hotel, meals) associated with TESA activities.
+(transport, hotel, meals).
 
 Carbon emissions (tonnes CO2) per km flying, driving, train or bus and
 emissions for a night in a hotel or average meal in a restaurant are
 taken from
 <a href="https://calculator.carbonfootprint.com/" class="uri">https://calculator.carbonfootprint.com/</a>.
-Flying distances are generally taken as direct air distances between
-cities
-(<a href="https://canada-map.com/distance/" class="uri">https://canada-map.com/distance/</a>).
-For smaller airports, where doubling back usually occurs then this is
-considered. For example Mont-Joli to St. John’s requires that you fly
-southwest to Montreal before flying over Mont-Joli again northeast to
-get to St. John’s. There we no effort to account for example that
-essentially straight flights would still have layovers at intermediate
-airports that could add km to the actual flying distance. The multiple
-possible routings can easily violate assumptions made in that kind of
-consideration and we cannot really account for that in this kind of
-calculator since each traveller will determine their own routing.
-
-Given assumptions, the most useful aspect of this is to keep
-calculations consistent and then look at changes from year to year in
-the carbon emissions.
 
 Install and load the library
 ----------------------------
@@ -42,7 +28,7 @@ Install and load the library
     devtools::install_github("duplisea/TESAcarbon")
     library(TESAcarbon)
 
-Calculate the incremental carbon footprint for a traveller
+Calculate the carbon footprint for an individual traveller
 ----------------------------------------------------------
 
 Five nights in a hotel, a 600 km plane trip (1200 km total return), 40
@@ -57,74 +43,47 @@ km of driving to and from airport solo and 15 meals
 
     ## [1] 0.530904
 
-Projected carbon emissions for TESA 2019/20 activities
-------------------------------------------------------
+Carbon emissions for a series of courses or meetings held by ICES
+-----------------------------------------------------------------
 
-In order to distribute money to regions each year, TESA requires a
-fairly solid participant list from each region where travel costs per
-participant can be determined and funds allocated accordingly. This list
-was used to develop a projected carbon emissions scenario for 2019.
+A mock example of a course offered by ICES is provided with the dataset
+ICES. It contains only the essential columns. You can have as many
+columns as you want but you need to make sure you have these ones and
+they have these exact names (case sensitive)
 
-First you need to determine the flying distances from the distances
-lookup square matrix. This is sparse at the moment with only locations
-that have DFO research labs associated with them included as that is
-where TESA activity participants come from (fill this in further if you
-want and create a pull request).
+    names(ICES)
 
-    activities= as.character(unique(TESA19to20$activity.name))
-    all.activity.distance=vector()
-    for (i in 1:length(activities)){
-      activity= activities[i]
-      specific.activity= TESA19to20[TESA19to20$activity.name==activity,]
-      activity.plane.distance= distance.match.f(specific.activity$origin,specific.activity$destination)[,1]
-      all.activity.distance= c(all.activity.distance, activity.plane.distance)
-    }
-    all.activity.distance[is.na(all.activity.distance)]=0
-    TESA19to20$plane.distance= all.activity.distance
+    ##  [1] "activity.type"     "activity.name"     "origin"           
+    ##  [4] "destination"       "origin.country"    "hotel.nights"     
+    ##  [7] "meals"             "bustrain.distance" "car.distance"     
+    ## [10] "car.sharing"
 
-The above does some formatting as well like it changes NA to 0.
+You will likely want to create your own .csv file with the names above
+and all rows filled in (1 row per participant). You would then import
+this and run the carbon footprint function on it. Here is the result of
+running the carbon.footprint.f function on the ICES data
 
-    TESA19to20$C= C.f(hotel.nights=TESA19to20$hotel.nights,
-        plane.distance=TESA19to20$plane.distance*2,
-        bustrain.distance= TESA19to20$bustrain.distance*2,
-        car.distance= TESA19to20$car.distance*2,
-        number.car.sharing=TESA19to20$car.sharing,
-        meals=TESA19to20$meals)
-    TESA19to20$C[is.nan(TESA19to20$C)]=0
-    round(sum(TESA19to20$C),3)
+    carbon.footprint.f(ICES, "ICES training carbon footprint, mock example", list.out=F)
 
-    ## [1] 73.194
+![](README_files/figure-markdown_strict/ICES.C-1.png)
 
-Now we can summarise the calculation and make a table
+This creates a global map with all origin cities of all participants
+located on the map and the host cities for the courses/meetings are
+circled red. A bar graph of the carbon emissions per activity are shown
+with per capita values on each bar and the title contains the total
+emissions for all activities combined.
 
-    total.per.activity= round(tapply(TESA19to20$C,TESA19to20$activity.name,sum),3)
-    participants.per.activity= tapply(TESA19to20$C,TESA19to20$activity.name,length)
-    per.capita.per.activity=round(total.per.activity/participants.per.activity,3)
-    mean.per.capita= round(mean(per.capita.per.activity),3)
-    total.C= round(sum(TESA19to20$C),3)
-    tab= data.frame(Activity=names(total.per.activity),
-      Total=total.per.activity,
-      Participation=participants.per.activity,
-      C.per.person=per.capita.per.activity)
-    tab
+Carbon emissions for TESA 2019-20 activities
+--------------------------------------------
 
-    ##                    Activity  Total Participation C.per.person
-    ## DataLimited     DataLimited 18.194            26        0.700
-    ## Geostatistics Geostatistics 12.697            25        0.508
-    ## Introduction   Introduction 23.496            35        0.671
-    ## Risk                   Risk 18.807            31        0.607
-    ## Rtools               Rtools  0.000            87        0.000
+This calculation is based on actual data though we are not sure of the
+final participation of activities yet to come, these are probably close
 
-    sum(tab$Total)
+    carbon.footprint.f(TESA19.20, "TESA carbon footprint 2019-20", list.out=F)
 
-    ## [1] 73.194
+![](README_files/figure-markdown_strict/TESA.C-1.png)
 
-    sum(tab$Participation)
-
-    ## [1] 204
-
-TESA’s total incremental Carbon footprint for 2019/20 is projected to be
-just over 73 tonnes CO2. 204 people are supposed to participate in TESA
-activities. \#\# References
+References
+----------
 
 <a href="https://calculator.carbonfootprint.com/" class="uri">https://calculator.carbonfootprint.com/</a>
