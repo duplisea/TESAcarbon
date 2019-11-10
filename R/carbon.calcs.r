@@ -66,6 +66,7 @@ C.f= function(hotel.nights, plane.distance, bustrain.distance, car.distance, num
 #'        "bustrain.distance"
 #'        "car.distance"
 #'        "car.sharing"
+#'        "flying"
 #' @description This looks up flying distances between origin and destination airports. Flying distances are
 #'        taken as direct geographic distances between cities and does not accounting for routing. It has some
 #'        simple error checking. If you get an error it will likely be here and it is because the cities database
@@ -80,7 +81,6 @@ distance.lookup.f= function(input.data){
   countries= unique(input.data$origin.country)
   datacitycountry= paste0(input.data$origin, input.data$origin.country)
   # lookup distances between locations
-  #cities= as.data.table(world.cities)[country.etc %in% countries]
   cities= as.data.table(world.cities)[country.etc %in% countries]
     #error check cities
     if(any(!(origin.vector %in% cities$name)))
@@ -107,7 +107,7 @@ distance.lookup.f= function(input.data){
     distances[i]= city.position[city.position$origin==origin.vector[i] &
               city.position$destination==destination.vector[i],]$distance
   }
-  distances= round(distances,0)
+  distances= round(distances,0)*input.data$flying
 
   #lat and long of cities
   origin.locations= cities[ name %in% unique(origin.vector)]

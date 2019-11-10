@@ -40,6 +40,7 @@ NULL
 #'   \item meals the total number of meals the participant will eat in a restaurant. 0 if none
 #'   \item bustrain.distance the total distance that a participant will take the bus or train. 0 if none
 #'   \item car.distance the total distance that a participant will drive a car. 0 if none
+#'   \item flying logical, if flying or not, 1 for yes 0 for no.
 #' }
 #'
 #' @docType data

@@ -17,7 +17,8 @@ distance.lookup.f(input.data)
 "meals"
 "bustrain.distance"
 "car.distance"
-"car.sharing"}
+"car.sharing"
+"flying"}
 }
 \description{
 This looks up flying distances between origin and destination airports. Flying distances are

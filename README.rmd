@@ -1,6 +1,6 @@
 ---
 author: "Daniel E. Duplisea"
-output: md_document
+output: html_document
 ---
 ## Carbon footprint for meetings and courses
 

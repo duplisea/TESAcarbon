@@ -56,7 +56,7 @@ they have these exact names (case sensitive)
     ##  [1] "activity.type"     "activity.name"     "origin"           
     ##  [4] "destination"       "origin.country"    "hotel.nights"     
     ##  [7] "meals"             "bustrain.distance" "car.distance"     
-    ## [10] "car.sharing"
+    ## [10] "car.sharing"       "flying"
 
 You will likely want to create your own .csv file with the names above
 and all rows filled in (1 row per participant). You would then import
