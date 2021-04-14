@@ -80,8 +80,15 @@ final participation of activities yet to come, these are probably close
 ## A shiny implementation
 
 You can run this as a shiny application on your webbrowser. You will
-need to install the package shiny from CRAN and then use the command
+need to install the package TESAcarbon (which requires devtools to
+install), shiny and shinybusy from CRAN (the code below checks to see if
+you have them and installs them if not) and then use the runGitHub
+command
 
+    if (!require('shiny')) install.packages('shiny'); library('shiny')
+    if (!require('shinybusy')) install.packages('shinybusy')
+    if (!require('devtools')) install.packages('devtools')
+    if (!require('TESAcarbon')) devtools::install_github('duplisea/TESAcarbon')
     runGitHub(repo="TESAcarbon", username="duplisea", subdir="shiny")
 
 ## References

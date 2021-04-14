@@ -211,8 +211,12 @@ library(TESAcarbon)</code></pre>
 </div>
 <div id="a-shiny-implementation" class="section level2">
 <h2>A shiny implementation</h2>
-<p>You can run this as a shiny application on your webbrowser. You will need to install the package shiny from CRAN and then use the command</p>
-<pre class="r"><code>runGitHub(repo=&quot;TESAcarbon&quot;, username=&quot;duplisea&quot;, subdir=&quot;shiny&quot;)</code></pre>
+<p>You can run this as a shiny application on your webbrowser. You will need to install the package TESAcarbon (which requires devtools to install), shiny and shinybusy from CRAN (the code below checks to see if you have them and installs them if not) and then use the runGitHub command</p>
+<pre class="r"><code>if (!require(&#39;shiny&#39;)) install.packages(&#39;shiny&#39;); library(&#39;shiny&#39;)
+if (!require(&#39;shinybusy&#39;)) install.packages(&#39;shinybusy&#39;)
+if (!require(&#39;devtools&#39;)) install.packages(&#39;devtools&#39;)
+if (!require(&#39;TESAcarbon&#39;)) devtools::install_github(&#39;duplisea/TESAcarbon&#39;)
+runGitHub(repo=&quot;TESAcarbon&quot;, username=&quot;duplisea&quot;, subdir=&quot;shiny&quot;)</code></pre>
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
