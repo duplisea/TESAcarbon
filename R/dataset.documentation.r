@@ -5,7 +5,7 @@
 #' A list with different carbon emission rates for one unit of travel (km), hotel (nights) and restaurant food (meals)
 #'
 #' \itemize{
-#'   \item C.plane carbon emissions per km of plane travel per person
+#'   \item C.plane carbon emissions per km of plane travel per person (tonnes CO2e/km/person)
 #'   \item C.car carbon emissions per km of car travel for a car with a motor > 2l
 #'   \item C.bustrain carbon emissions per km of bus or train travel per person
 #'   \item C.hotel carbon emissions per night in an average hotel (160 USD/night)
@@ -14,7 +14,7 @@
 #'         that participants are not eating a meal at home if they are eating one in a restaurant. A CBC article
 #'         cited a value showing that eating a meal in a restaurant emits about 2X the amount of carbon per meal
 #'         than one does at home owing to food waste and other forms of additional carbon consumption associated
-#'         with restaurants
+#'         with restaurants. Other work has shown it is on average 3.67 x more carbon emitting.
 #' }
 #'
 #' @docType data
@@ -41,6 +41,7 @@ NULL
 #'   \item bustrain.distance the total distance that a participant will take the bus or train. 0 if none
 #'   \item car.distance the total distance that a participant will drive a car. 0 if none
 #'   \item flying logical, if flying or not, 1 for yes 0 for no.
+#'   \item number.of.meetings if you attended more than one meeting on the same trip, this divides the transport CO2e emissions by that number
 #' }
 #'
 #' @docType data

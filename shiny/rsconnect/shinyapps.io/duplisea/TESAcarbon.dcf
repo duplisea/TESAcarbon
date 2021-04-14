@@ -1,0 +1,12 @@
+name: TESAcarbon
+title: TESAcarbon
+username:
+account: duplisea
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3952932
+bundleId: 4463678
+url: https://duplisea.shinyapps.io/TESAcarbon/
+when: 1618281406.46263
+asMultiple: FALSE
+asStatic: FALSE

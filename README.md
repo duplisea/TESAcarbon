@@ -1,5 +1,4 @@
-Carbon footprint for meetings and courses
------------------------------------------
+## Carbon footprint for meetings and courses
 
 Meetings, courses, workshops etc, means that participant travel,
 restaurant meals and stays in hotels cause carbon emissions over and
@@ -19,17 +18,14 @@ developed. It accounts only for travel related carbon emissions
 
 Carbon emissions (tonnes CO2) per km flying, driving, train or bus and
 emissions for a night in a hotel or average meal in a restaurant are
-taken from
-<a href="https://calculator.carbonfootprint.com/" class="uri">https://calculator.carbonfootprint.com/</a>.
+taken from <https://calculator.carbonfootprint.com/>.
 
-Install and load the library
-----------------------------
+## Install and load the library
 
     devtools::install_github("duplisea/TESAcarbon")
     library(TESAcarbon)
 
-Calculate the carbon footprint for an individual traveller
-----------------------------------------------------------
+## Calculate the carbon footprint for an individual traveller
 
 Five nights in a hotel, a 600 km plane trip (1200 km total return), 40
 km of driving to and from airport solo and 15 meals
@@ -43,8 +39,7 @@ km of driving to and from airport solo and 15 meals
 
     ## [1] 0.530904
 
-Carbon emissions for a series of courses or meetings held by ICES
------------------------------------------------------------------
+## Carbon emissions for a series of courses or meetings held by ICES
 
 A mock example of a course offered by ICES is provided with the dataset
 ICES. It contains only the essential columns. You can have as many
@@ -65,7 +60,7 @@ running the carbon.footprint.f function on the ICES data
 
     carbon.footprint.f(ICES, "ICES training carbon footprint, mock example", list.out=F)
 
-![](README_files/figure-markdown_strict/ICES.C-1.png)
+    ## Error in carbon.footprint.f(ICES, "ICES training carbon footprint, mock example", : your input data is missing one or more of the columns named: activity.type activity.name origin destination origin.country hotel.nights meals bustrain.distance car.distance car.sharing flying number.of.meetings
 
 This creates a global map with all origin cities of all participants
 located on the map and the host cities for the courses/meetings are
@@ -73,17 +68,22 @@ circled red. A bar graph of the carbon emissions per activity are shown
 with per capita values on each bar and the title contains the total
 emissions for all activities combined.
 
-Carbon emissions for TESA 2019-20 activities
---------------------------------------------
+## Carbon emissions for TESA 2019-20 activities
 
 This calculation is based on actual data though we are not sure of the
 final participation of activities yet to come, these are probably close
 
     carbon.footprint.f(TESA19.20, "TESA carbon footprint 2019-20", list.out=F)
 
-![](README_files/figure-markdown_strict/TESA.C-1.png)
+    ## Error in carbon.footprint.f(TESA19.20, "TESA carbon footprint 2019-20", : your input data is missing one or more of the columns named: activity.type activity.name origin destination origin.country hotel.nights meals bustrain.distance car.distance car.sharing flying number.of.meetings
 
-References
-----------
+## A shiny implementation
 
-<a href="https://calculator.carbonfootprint.com/" class="uri">https://calculator.carbonfootprint.com/</a>
+You can run this as a shiny application on your webbrowser. You will
+need to install the package shiny from CRAN and then use the command
+
+    runGitHub(repo="TESAcarbon", username="duplisea", subdir="shiny")
+
+## References
+
+<https://calculator.carbonfootprint.com/>

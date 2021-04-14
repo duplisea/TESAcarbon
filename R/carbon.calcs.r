@@ -67,21 +67,23 @@ C.f= function(hotel.nights, plane.distance, bustrain.distance, car.distance, num
 #'        "car.distance"
 #'        "car.sharing"
 #'        "flying"
+#'        "number.of.meetings"
 #' @description This looks up flying distances between origin and destination airports. Flying distances are
 #'        taken as direct geographic distances between cities and does not accounting for routing. It has some
 #'        simple error checking. If you get an error it will likely be here and it is because the cities database
 #'        does not contain your location. Some options are given when an error arises.
 #'
 #'        You are unlikely to want to call this function on its own. It is used inside the main function.
-#' @authors Daniel Duplisea, Martin Pastoors
+#' @author Daniel Duplisea, Martin Pastoors
 #' @export
 distance.lookup.f= function(input.data){
   origin.vector= input.data$origin
   destination.vector= input.data$destination
-  countries= unique(input.data$origin.country)
+  ocountries= unique(input.data$origin.country)
   datacitycountry= paste0(input.data$origin, input.data$origin.country)
+  destination.citycountry= unique(paste0(input.data$destination, input.data$destination.country))
   # lookup distances between locations
-  cities= as.data.table(world.cities)[country.etc %in% countries]
+  cities= as.data.table(world.cities)[country.etc %in% ocountries]
     #error check cities
     if(any(!(origin.vector %in% cities$name)))
       stop(paste(origin.vector[!(origin.vector %in% cities$name)], ": this origin city country combination does not have an entry in the world cities database. Options:
@@ -93,6 +95,8 @@ distance.lookup.f= function(input.data){
             and use the city name in the 'name' and 'country.etc' column in your input data.sheet"))
   cities$citycountry= paste0(cities$name,cities$country.etc)
   cities= cities[citycountry %in% datacitycountry]
+  # right here do not do the cross tabulation but find the destinationcitycountry combo and determine just the distances with it
+
   city.matrix= CJ(name=cities$name, name1=cities$name,unique=TRUE)
   tmp= merge(x=city.matrix, y=cities[,.(name,lat,long)], by.x = "name", by.y = "name", allow.cartesian=TRUE)
   city.position= merge(x=tmp, y=cities[,.(name,lat,long)], by.x = "name1", by.y = "name", allow.cartesian=TRUE)
@@ -102,7 +106,7 @@ distance.lookup.f= function(input.data){
                                   city.position[,.(long.destination,lat.destination)])/1000
   city.position= city.position[origin %in% unique(origin.vector) | destination %in% unique(destination.vector)]
   city.position$city.combo= paste0(city.position$origin,city.position$destination)
-  distances=vector(length=length(origin.vector))
+    distances=vector(length=length(origin.vector))
   for (i in 1:length(origin.vector)){
     distances[i]= city.position[city.position$origin==origin.vector[i] &
               city.position$destination==destination.vector[i],]$distance
@@ -130,15 +134,29 @@ distance.lookup.f= function(input.data){
 #'        "bustrain.distance"
 #'        "car.distance"
 #'        "car.sharing"
+#'        "flying"
+#'        "number.of.meetings"
 #' @param Title.name A text string for how you want the plot named
 #' @param list.out logical, output the list to the console
-#' @description Calculates the carbon emissions footprint for all the activites. It plots the calculation
-#'        as a bar graph with total and per capita values. It also produces a map with all the home cities of
-#'        participants as well as the destination cities which are circled in red. The total carbon emissions
-#'        of all activities combined is shown in the title. A list with calculations is also produced.
+#' @description Calculates the carbon emissions footprint for all the activites resulting from travel to and from
+#'        meetings.
+#' @details You should not include holiday days you may take in conjunction with the meeting travel but consider
+#'        only the days (hotel and meals) you would have taken if you had gone only for work.
+#' @return  a bar graph with total and per capita values. It also produces a map with
+#'        all the home cities of participants as well as the destination cities which are circled in red. The total
+#'        carbon emissions of all activities combined is shown in the title. A list with calculations is also produced.
+#'        Units are tonnes CO2 equivalents (CO2e) of all greenhouse gases.
+#' @caveats
 #' @authors Daniel Duplisea
 #' @export
 carbon.footprint.f= function(input, Title.name="Carbon footprint", list.out=T){
+  must.have= c("activity.type","activity.name","origin","destination","origin.country","hotel.nights",
+               "meals","bustrain.distance","car.distance","car.sharing","flying","number.of.meetings")
+  if(any(!(must.have %in% names(input)))){
+    stop(paste("your input data is missing one or more of the columns named:", "activity.type",
+               "activity.name","origin","destination","origin.country","hotel.nights",
+               "meals","bustrain.distance","car.distance","car.sharing","flying","number.of.meetings"))
+  }
   localisation= distance.lookup.f(input)
   localisation$origin.locations$capital=0
   localisation$destination.locations$capital=1
@@ -146,9 +164,9 @@ carbon.footprint.f= function(input, Title.name="Carbon footprint", list.out=T){
   cities= rbind(localisation$destination,cities)
   input$plane.distance= localisation$distance
   input$C= C.f(hotel.nights=input$hotel.nights,
-    plane.distance=input$plane.distance*2,
-    bustrain.distance= input$bustrain.distance*2,
-    car.distance= input$car.distance*2,
+    plane.distance=input$plane.distance*2/input$number.of.meetings,
+    bustrain.distance= input$bustrain.distance*2/input$number.of.meetings,
+    car.distance= input$car.distance*2/input$number.of.meetings,
     number.car.sharing=input$car.sharing,
     meals=input$meals)
   total.per.activity= round(tapply(input$C,input$activity.name,sum),3)
@@ -163,7 +181,7 @@ carbon.footprint.f= function(input, Title.name="Carbon footprint", list.out=T){
   location= input[,.(unique(destination),unique(activity.type)),activity.name]
   tab1$location= location$V1[match(tab1$Activity,location$activity.name)]
   tab1$type= location$V2[match(tab1$Activity,location$activity.name)]
-  tab= list(carbon= tab1, countries= unique(input$origin.country),locations= cities)
+  tab= list(carbon= tab1, ocountries= unique(input$origin.country),locations= cities)
   tab
 
   mapbar= function(C.emissions){
@@ -176,7 +194,7 @@ carbon.footprint.f= function(input, Title.name="Carbon footprint", list.out=T){
         label=paste0("per capita=",round(tab$carbon$C.per.person,2)),cex=3,col="orange")+
       theme_classic()+
       aes(stringr::str_wrap(Activity, 15))+
-      ylab("Carbon emissions (t)")+
+      ylab("CO2e emissions (t)")+
       xlab(NULL)+
       coord_flip()
 
@@ -190,7 +208,7 @@ carbon.footprint.f= function(input, Title.name="Carbon footprint", list.out=T){
 
     plots= plot_grid(map,carbon,nrow=2)
     title <- ggdraw() +
-      draw_label(paste0(Title.name, ', Total C = ',round(sum(tab$carbon$Total),1),' t'), fontface = 'bold', x = 0, hjust = 0) +
+      draw_label(paste0(Title.name, ', Total CO2e = ',round(sum(tab$carbon$Total),1),' t'), fontface = 'bold', x = 0, hjust = 0) +
       theme(plot.margin = margin(0, 0, 0, 7))
       plot_grid(title, plots, ncol = 1,rel_heights = c(0.1, 1))
   }

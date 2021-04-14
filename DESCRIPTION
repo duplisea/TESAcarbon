@@ -4,7 +4,7 @@ Title: Carbon Footprint of TESA Activities
 Version: 0.1.0
 Authors: Daniel Duplisea, Martin Pastoors
 Maintainer: Daniel Duplisea <daniel.duplisea@dfo-mpo.gc.ca>
-Description: A R package to calculate the carbon footprint of TESA activities accounting for travel, accommodation and food
+Description: Carbon footprint calculator (R package) for meetings that draws a world map with origins and destination, carbon per meeting, total carbon and per capita carbon emissions
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

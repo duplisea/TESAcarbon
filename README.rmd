@@ -62,6 +62,14 @@ This calculation is based on actual data though we are not sure of the final par
 carbon.footprint.f(TESA19.20, "TESA carbon footprint 2019-20", list.out=F)
 ```
 
+## A shiny implementation
+
+You can run this as a shiny application on your webbrowser. You will need to install the package shiny from CRAN and then use the command
+
+```{r shinyapp, eval=FALSE}
+runGitHub(repo="TESAcarbon", username="duplisea", subdir="shiny")
+```
+
 ## References
 
 https://calculator.carbonfootprint.com/
